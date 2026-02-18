@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 295" role="img" aria-label="C.H.A.N.C.E. For Crime Victims Logo">
+  <title>C.H.A.N.C.E. For Crime Victims</title>
+  <defs>
+    <style>
+      .s{fill:none;stroke:#1D40A8;stroke-linecap:round;stroke-linejoin:round}
+      .f{fill:#1D40A8;stroke:none}
+    </style>
+  </defs>
+  <path class="s" stroke-width="3.8" d="M 18,7 L 212,7 L 212,178 C 212,228 115,290 115,290 C 115,290 18,228 18,178 Z"/>
+  <line class="s" stroke-width="2.5" x1="36" y1="28" x2="85" y2="28"/>
+  <line class="s" stroke-width="2" x1="60" y1="28" x2="60" y2="48"/>
+  <line class="s" stroke-width="1.8" x1="36" y1="28" x2="30" y2="48"/>
+  <path class="s" stroke-width="2.2" d="M 20,48 Q 30,58 40,48"/>
+  <line class="s" stroke-width="1.8" x1="85" y1="28" x2="79" y2="46"/>
+  <path class="s" stroke-width="2.2" d="M 69,46 Q 79,56 89,46"/>
+  <path class="s" stroke-width="3" d="M 98,83 Q 80,65 62,50"/>
+  <rect class="f" x="56" y="46" width="11" height="9" rx="2"/>
+  <circle class="s" stroke-width="3" cx="115" cy="70" r="15"/>
+  <path class="s" stroke-width="1.8" d="M 103,63 Q 115,54 127,63"/>
+  <rect class="f" x="101" y="67" width="28" height="7" rx="1.5"/>
+  <line class="s" stroke-width="2.5" x1="115" y1="85" x2="115" y2="93"/>
+  <path class="s" stroke-width="2.5" d="M 98,93 L 115,88 L 133,93"/>
+  <path class="s" stroke-width="2.5" d="M 98,93 C 92,112 86,140 80,172 C 74,200 68,228 64,252"/>
+  <path class="s" stroke-width="2.5" d="M 133,93 C 136,112 138,140 137,172 C 136,198 137,228 139,250"/>
+  <path class="s" stroke-width="2.2" d="M 64,252 Q 102,264 139,250"/>
+  <path class="s" stroke-width="1.4" d="M 93,118 Q 110,127 132,119"/>
+  <path class="s" stroke-width="1.4" d="M 86,152 Q 108,162 136,152"/>
+  <path class="s" stroke-width="1.4" d="M 77,190 Q 105,200 137,188"/>
+  <path class="s" stroke-width="3" d="M 133,93 Q 146,110 152,130"/>
+  <circle class="f" cx="152" cy="124" r="5"/>
+  <rect class="f" x="148" y="126" width="8" height="20" rx="2"/>
+  <rect class="f" x="139" y="141" width="26" height="5" rx="1"/>
+  <line class="s" stroke-width="2.8" x1="152" y1="146" x2="163" y2="292"/>
+  <text x="235" y="192" font-family="'Arial Black', Impact, Arial, sans-serif" font-size="110" font-weight="900" fill="#CC1122" textLength="592" lengthAdjust="spacingAndGlyphs">C.H.A.N.C.E.</text>
+  <text x="262" y="249" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="400" fill="#5577AA">For Crime Victims</text>
+</svg>
