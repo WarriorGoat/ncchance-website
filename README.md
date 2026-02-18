@@ -10,7 +10,7 @@ Website for C.H.A.N.C.E., a North Carolina nonprofit dedicated to serving crime 
 
 ```
 ncchance.org/
-├── ncchance.html               # Main single-page website
+├── index.html                  # Main single-page website
 ├── images/
 │   ├── ChanceLogo_2.svg        # Full organization logo
 │   ├── ChanceBadge.svg         # Shield badge (favicon + hero)
@@ -46,13 +46,28 @@ The site is hosted on **AWS Amplify** with automatic deployments triggered by pu
 
 ### DNS Configuration
 
-The domain is registered at GoDaddy but DNS is managed through **DreamHost** (nameservers: `ns1–ns3.dreamhost.com`). Three records are required in DreamHost:
+The domain is registered and DNS is managed at **GoDaddy** (nameservers: `ns75.domaincontrol.com` / `ns76.domaincontrol.com`).
+
+**Website records (AWS Amplify / CloudFront):**
 
 | Type | Host | Value |
 |------|------|-------|
-| CNAME | `_0acdec370d63e3b4287cab0ecd0d32c9` | `_6c8dd2437e28069edbdb1293608d5a64.jkddzztszm.acm-validations.aws.` |
-| ALIAS | `@` (root) | `dkgz0e5jt97rn.cloudfront.net` |
 | CNAME | `www` | `dkgz0e5jt97rn.cloudfront.net` |
+| CNAME | `_0acdec370d63e3b4287cab0ecd0d32c9` | `_6c8dd2437e28069edbdb1293608d5a64.jkddzztszm.acm-validations.aws.` |
+| Forwarding | `ncchance.org` → `https://www.ncchance.org` | Permanent (301) — GoDaddy Forwarding tab |
+
+> **Note:** GoDaddy does not support ALIAS/ANAME records, so the root domain (`ncchance.org`) uses GoDaddy's built-in domain forwarding to redirect to `https://www.ncchance.org`.
+
+**Email records (Microsoft 365):**
+
+| Type | Host | Value |
+|------|------|-------|
+| MX | `@` | `ncchance-org.mail.protection.outlook.com` (Priority: 0) |
+| CNAME | `autodiscover` | `autodiscover.outlook.com` |
+| CNAME | `selector1._domainkey` | `selector1-ncchance-org._domainkey.NCCHANCE.q-v1.dkim.mail.microsoft` |
+| CNAME | `selector2._domainkey` | `selector2-ncchance-org._domainkey.NCCHANCE.q-v1.dkim.mail.microsoft` |
+| TXT | `@` | `MS=ms32110376` |
+| TXT | `@` | `v=spf1 include:spf.protection.outlook.com -all` |
 
 ### Deploying Updates
 
