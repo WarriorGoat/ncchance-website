@@ -1,0 +1,33 @@
+customHeaders:
+  - pattern: '**/*'
+    headers:
+      # Force HTTPS for 1 year, include subdomains
+      - key: 'Strict-Transport-Security'
+        value: 'max-age=31536000; includeSubDomains'
+
+      # Prevent MIME-type sniffing
+      - key: 'X-Content-Type-Options'
+        value: 'nosniff'
+
+      # Block clickjacking — only this origin can frame the site
+      - key: 'X-Frame-Options'
+        value: 'SAMEORIGIN'
+
+      # Legacy XSS filter (still useful for older browsers)
+      - key: 'X-XSS-Protection'
+        value: '1; mode=block'
+
+      # Control referrer info sent to external sites
+      - key: 'Referrer-Policy'
+        value: 'strict-origin-when-cross-origin'
+
+      # Restrict browser features not needed by this site
+      - key: 'Permissions-Policy'
+        value: 'camera=(), microphone=(), geolocation=(), payment=()'
+
+      # Content Security Policy — controls what resources can load
+      # - Allows inline scripts/styles (required by this site's architecture)
+      # - Allows Google Fonts (fonts.googleapis.com + fonts.gstatic.com)
+      # - Blocks everything else external
+      - key: 'Content-Security-Policy'
+        value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' mailto:"
