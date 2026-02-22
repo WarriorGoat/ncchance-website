@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Exclude template/partial files from indexing
+Disallow: /header.html
+Disallow: /footer.html
+
+Sitemap: https://ncchance.org/sitemap.xml
