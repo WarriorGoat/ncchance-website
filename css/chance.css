@@ -276,7 +276,7 @@ footer a:hover { color: var(--gold); }
 .blog-hero p {
   font-size: 1.05rem;
   color: rgba(255,255,255,0.7);
-  max-width: 620px;
+  max-width: 860px;
   margin: 0 auto;
   line-height: 1.65;
 }
@@ -299,7 +299,7 @@ footer a:hover { color: var(--gold); }
   display: flex;
   flex-direction: column;
   background: var(--white);
-  border-radius: var(--radius);
+  border-radius: 14px;
   overflow: hidden;
   box-shadow: var(--shadow);
   border: 1px solid var(--beige-dark);
@@ -309,8 +309,8 @@ footer a:hover { color: var(--gold); }
 }
 
 .blog-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+  transform: translateY(-10px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.18);
 }
 
 .blog-card-body {
@@ -374,7 +374,7 @@ footer a:hover { color: var(--gold); }
 @media (max-width: 900px) {
   .blog-grid { grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 560px) {
+@media (max-width: 640px) {
   .blog-grid { grid-template-columns: 1fr; }
 }
 

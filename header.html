@@ -8,13 +8,11 @@
         <span></span><span></span><span></span>
       </button>
       <ul id="nav-menu">
-        <li><a href="/#mission">Our Mission</a></li>
-        <li><a href="/#victims">For Victims</a></li>
-        <li><a href="/#professionals">For Professionals</a></li>
-        <li><a href="/#training">Training</a></li>
-        <li><a href="/#about">About Us</a></li>
-        <li><a href="/blog.html" class="nav-blog">Blog</a></li>
-        <li><a href="/#giving">Support Us</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/#giving" class="nav-donate">Donate</a></li>
         <li><a href="/#contact" class="nav-cta">Contact</a></li>
       </ul>
       <div class="nav-social" aria-label="Social media">
@@ -31,22 +29,32 @@
 
 <script>
 (function(){
-  // Mobile hamburger toggle
-  const btn = document.getElementById('hamburger');
-  const menu = document.getElementById('nav-menu');
+  var btn  = document.getElementById('hamburger');
+  var menu = document.getElementById('nav-menu');
   if (btn && menu) {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', function() {
       menu.classList.toggle('open');
       btn.setAttribute('aria-expanded', menu.classList.contains('open'));
+    });
+    menu.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() { menu.classList.remove('open'); });
     });
   }
 
   // Highlight active nav link
-  const path = window.location.pathname;
-  document.querySelectorAll('#nav-menu a').forEach(a => {
-    if (a.href && new URL(a.href).pathname === path) {
-      a.classList.add('active');
-    }
+  var path = window.location.pathname;
+  document.querySelectorAll('#nav-menu a').forEach(function(a) {
+    try {
+      if (new URL(a.href).pathname === path) a.classList.add('active');
+    } catch(e) {}
+  });
+
+  // Header shadow on scroll
+  var hdr = document.getElementById('main-header');
+  window.addEventListener('scroll', function() {
+    hdr.style.boxShadow = window.scrollY > 60
+      ? '0 2px 20px rgba(0,0,0,0.35)'
+      : '0 2px 12px rgba(0,0,0,0.25)';
   });
 })();
 </script>
