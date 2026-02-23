@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <title>C.H.A.N.C.E. | Crime Victim Legal Advocacy &amp; Education | North Carolina</title>
+  <title>C.H.A.N.C.E. | Legal Advocacy &amp; Education for Crime Victims</title>
   <meta name="description" content="C.H.A.N.C.E. is a North Carolina nonprofit providing legal advocacy, education, and navigation services for crime victims — with a focus on military-connected survivors of sexual assault, domestic violence, and harassment.">
   <meta name="keywords" content="crime victim advocacy North Carolina, military sexual assault legal help, crime victims rights NC, Special Victims Counsel, military domestic violence attorney, victims rights nonprofit NC, C.H.A.N.C.E. nonprofit, legal education crime victims">
 
@@ -13,14 +13,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ncchance.org/">
   <meta property="og:site_name" content="C.H.A.N.C.E. For Crime Victims">
-  <meta property="og:title" content="C.H.A.N.C.E. | Crime Victim Legal Advocacy &amp; Education | North Carolina">
+  <meta property="og:title" content="C.H.A.N.C.E. | Legal Advocacy &amp; Education for Crime Victims">
   <meta property="og:description" content="C.H.A.N.C.E. is a North Carolina nonprofit providing legal advocacy, education, and navigation services for crime victims — with a focus on military-connected survivors of sexual assault, domestic violence, and harassment.">
   <meta property="og:image" content="https://ncchance.org/images/ruth-cresenzo.jpg">
   <meta property="og:image:alt" content="Ruth A. Cresenzo, J.D. — Executive Director, C.H.A.N.C.E. For Crime Victims">
   <meta property="og:locale" content="en_US">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="C.H.A.N.C.E. | Crime Victim Legal Advocacy &amp; Education | North Carolina">
+  <meta name="twitter:title" content="C.H.A.N.C.E. | Legal Advocacy &amp; Education for Crime Victims">
   <meta name="twitter:description" content="C.H.A.N.C.E. is a North Carolina nonprofit providing legal advocacy, education, and navigation services for crime victims — with a focus on military-connected survivors.">
   <meta name="twitter:image" content="https://ncchance.org/images/ruth-cresenzo.jpg">
 
@@ -56,6 +56,9 @@
       "description": "Retired Lieutenant Colonel, Judge Advocate, and nationally recognized advocate for military-connected crime victims."
     }
   }
+  </script>
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAA3TLR9iGx8RHEybq4_-sboTzKMRf342vMZq7ttngRXNWE4iPn4_6UnePgmBMuSt5AAxVy_opyS8Sliug&components=hosted-buttons&enable-funding=venmo&currency=USD">
   </script>
 
   <link rel="icon" type="image/svg+xml" href="images/ChanceBadge.svg">
@@ -309,10 +312,10 @@
     .donate-box p { font-size: 0.93rem; color: rgba(255,255,255,0.82); margin: 0; }
 
     .donate-inner { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; width: 100%; }
-    .donate-qr { flex-shrink: 0; }
-    .donate-qr img { width: 120px; height: 120px; border-radius: 6px; background: var(--white); padding: 6px; }
+    .donate-qr { flex: 1; display: flex; flex-direction: column; align-items: center; }
+    .donate-qr img { width: 100%; max-width: 220px; height: auto; border-radius: 6px; background: var(--white); padding: 6px; }
     .donate-qr-label { font-size: 0.72rem; color: rgba(255,255,255,0.55); text-align: center; margin-top: 6px; letter-spacing: 0.5px; }
-    .donate-actions { display: flex; flex-direction: column; gap: 12px; }
+    .donate-actions { display: flex; flex-direction: column; gap: 12px; flex: 1; min-width: 200px; }
 
     /* ===================================================
        CONTACT
@@ -617,9 +620,6 @@
           </div>
           <div class="donate-actions">
             <div id="paypal-container-4ANRG7725AZ46"></div>
-            <p style="font-size:0.82rem; color:rgba(255,255,255,0.55); margin:0;">
-              Or scan the QR code with your phone camera
-            </p>
           </div>
         </div>
       </div>
@@ -806,8 +806,6 @@
   scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 </script>
 
-<!-- PayPal Hosted Buttons SDK -->
-<script src="https://www.paypal.com/sdk/js?client-id=BAA3TLR9iGx8RHEybq4_-sboTzKMRf342vMZq7ttngRXNWE4iPn4_6UnePgmBMuSt5AAxVy_opyS8Sliug&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
 <script>
   paypal.HostedButtons({
     hostedButtonId: "4ANRG7725AZ46",

@@ -116,6 +116,33 @@ git commit -m "your message"
 git push
 ```
 
+## Content Notes
+
+- The site serves **all crime victims**; military-connected survivors is the **primary initiative**, not the entire mission
+- The Safety Exit button is critical for survivor safety and must be retained on all pages
+- Blog series is **Ruth's Truths** — posts are cross-published to LinkedIn (`linkedin.com/in/racresenzo`)
+- Giving model: 25% of Ruth's consulting/mediation fees → C.H.A.N.C.E.; 25% → local DV/SA orgs (feature in Giving and Our Story sections)
+
+## Upcoming Events
+
+| Event | Location | Date | Topic |
+|-------|----------|------|-------|
+| NCVLI Conference | Portland, OR | May 2026 | "Working With Military Victim Counsel to Supplement Representation" |
+
+## Social Media Launch Series
+
+Five posts drafted for LinkedIn + Facebook. Full post text in `CHANCE Website Content FINAL Feb 2026.docx`.
+
+| # | Topic | Timing |
+|---|-------|--------|
+| 1 | Brand Announcement | Publish first — anchor post |
+| 2 | Ruth's Truths Introduction | 1–2 days after Post 1 |
+| 3 | Volunteer Attorney Call | 2–3 days after Post 1 |
+| 4 | NCVLI Conference Announcement | 3–4 days after Post 1 |
+| 5 | The Giving Model (25%/25%) | 5–7 days after Post 1 |
+
+Cross-post each to both LinkedIn and Facebook using the same text.
+
 ## Contact
 
 - **Website:** [ncchance.org](https://ncchance.org)
