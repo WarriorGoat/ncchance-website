@@ -73,30 +73,23 @@ Hosted zone `Z0457513291UJIXDIQM14` created and all 12 records loaded via AWS AP
 - SPF + MS domain verification TXT records
 - NS + SOA (auto-created by Route 53)
 
-### Phase 2 — Unlock Domain and Get Authorization Code (GoDaddy)
+### Phase 2 — Unlock Domain and Get Authorization Code (GoDaddy) ✅ COMPLETE
 
-**Estimated time: 10 minutes | Do this after Phase 1 is complete**
+**Completed: February 24, 2026**
 
-1. Log in to GoDaddy → **My Products → Domains → ncchance.org → Settings**
-2. Under **Domain Lock**, toggle to **Unlocked**
-3. Under **Transfer Away from GoDaddy**, click **Get Authorization Code**
-4. GoDaddy will email the EPP/auth code to the account email address on file
-5. Copy and save the authorization code — it expires in 5–7 days
+Domain unlocked at GoDaddy and EPP authorization code obtained.
 
-> ⚠️ The domain must have been registered (or last transferred) more than 60 days ago to be eligible for transfer. Given the site's history, this should not be an issue.
+### Phase 3 — Initiate Domain Transfer in Route 53 ✅ COMPLETE
 
-### Phase 3 — Initiate Domain Transfer in Route 53
+**Completed: February 24, 2026**
 
-**Estimated time: 15 minutes to initiate | Transfer takes 5–7 days**
-
-1. AWS Console → **Route 53 → Domains → Transfer domain**
-2. Enter `ncchance.org` → check availability (it will show "transferable")
-3. Enter the **authorization code** from Phase 2
-4. Choose **Use Route 53 hosted zone** (select the one created in Phase 1)
-5. Confirm contact/WHOIS information
-6. Select **Auto-renew** (recommended)
-7. Pay the transfer fee (~$13/year for .org, prorated)
-8. Submit
+- Transfer submitted via AWS API
+- **Operation ID:** `7a89c4c3-83ac-4551-a0b8-e3abfbed2118`
+- **Status:** SUBMITTED
+- Transfer cost: $15.00 USD (charged to AWS account, includes 1-year renewal)
+- WHOIS privacy protection enabled
+- Auto-renew enabled
+- Route 53 nameservers specified (hosted zone `Z0457513291UJIXDIQM14`)
 
 ### Phase 4 — Approve the Transfer
 
